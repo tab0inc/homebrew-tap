@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class Decis < Formula
+class DecisCli < Formula
   desc "Secure CLI for Decis health and decision context"
   homepage "https://decis.me"
   version "1.0.0"
