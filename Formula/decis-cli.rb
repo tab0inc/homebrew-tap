@@ -4,7 +4,6 @@
 class DecisCli < Formula
   desc "Secure CLI for Decis health and decision context"
   homepage "https://decis.me"
-  version "1.0.0"
 
   depends_on :macos
 
