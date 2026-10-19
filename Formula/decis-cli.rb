@@ -9,11 +9,11 @@ class DecisCli < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tab0inc/decis-cli-releases/releases/download/v1.18.1/decis-cli_1.18.1_darwin_arm64.tar.gz"
-      sha256 "11e2c8d519981270cc37bcf1c02bc08203a7072db47be25569e6b55aa4d42047"
+      url "https://github.com/tab0inc/decis-cli-releases/releases/download/v1.19.0/decis-cli_1.19.0_darwin_arm64.tar.gz"
+      sha256 "773aa9eee98e9318592ac2bdff58813573ebba741d5f88ee5a4653ccc32eb1e9"
     else
-      url "https://github.com/tab0inc/decis-cli-releases/releases/download/v1.18.1/decis-cli_1.18.1_darwin_amd64.tar.gz"
-      sha256 "636ab77fd491f417d5f4518431a19848385136bf835ab5e020a808e08c68c335"
+      url "https://github.com/tab0inc/decis-cli-releases/releases/download/v1.19.0/decis-cli_1.19.0_darwin_amd64.tar.gz"
+      sha256 "41953f550146eb0a07401766c72580dfbe04665c45536cddbdbb2ab3f35ba62c"
     end
   end
 
