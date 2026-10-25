@@ -21,6 +21,10 @@ brew services start happen
 happen open
 ```
 
+Then start a lead: tell Claude Code to run `happen skill --channel <channel>` and
+follow it, or type `! happen skill --channel <channel>` in the session. No skill
+needs to be installed.
+
 The `happen` Formula installs the `happen` executable: the Happen server, its
 web app, and the CLI a supervising Claude Code or Codex session uses.
 `happen setup` prepares the Mac once, and `brew services` keeps the server
