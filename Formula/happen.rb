@@ -11,11 +11,11 @@ class Happen < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tab0inc/happen-releases/releases/download/v0.2.0/happen_0.2.0_darwin_arm64.tar.gz"
-      sha256 "3b36f273d2317a9ddd5ed39b75013cdc29f02737d7d94a45b3c32afd6c4b22c8"
+      url "https://github.com/tab0inc/happen-releases/releases/download/v0.3.0/happen_0.3.0_darwin_arm64.tar.gz"
+      sha256 "9aeee6d5cff95565ce3165fa76676ab5da2be293aade29e23caebbe52167a0f2"
     else
-      url "https://github.com/tab0inc/happen-releases/releases/download/v0.2.0/happen_0.2.0_darwin_amd64.tar.gz"
-      sha256 "6331b2ef8a89389a837e521f99910c4cc27b274613a2b3ad529ef2fed56e21f1"
+      url "https://github.com/tab0inc/happen-releases/releases/download/v0.3.0/happen_0.3.0_darwin_amd64.tar.gz"
+      sha256 "4af637a2ff257ae2b02bca7f72285f7b0675101966e8a8ba2aeb9c93259a5eea"
     end
   end
 
@@ -30,6 +30,9 @@ class Happen < Formula
         brew services start happen
       Then connect a browser:
         happen open
+      Start a lead: tell Claude Code to run happen skill --channel <channel>
+      and follow it, or type in the session:
+        ! happen skill --channel <channel>
     EOS
   end
 
