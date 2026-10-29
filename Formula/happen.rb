@@ -11,11 +11,11 @@ class Happen < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tab0inc/happen-releases/releases/download/v0.4.0/happen_0.4.0_darwin_arm64.tar.gz"
-      sha256 "d60aad2e78214ac26039a656c2aecc0085b0a880513de5a913c9d6cc0fdc07bf"
+      url "https://github.com/tab0inc/happen-releases/releases/download/v0.5.0/happen_0.5.0_darwin_arm64.tar.gz"
+      sha256 "50c2b953ed844b1e8b1953863904012ef578f0cc8f691682119ce8d420cf36f0"
     else
-      url "https://github.com/tab0inc/happen-releases/releases/download/v0.4.0/happen_0.4.0_darwin_amd64.tar.gz"
-      sha256 "0ad0137c40d4714b6c496dc529575e4b6abad84c5a538535c17b6e80588285d6"
+      url "https://github.com/tab0inc/happen-releases/releases/download/v0.5.0/happen_0.5.0_darwin_amd64.tar.gz"
+      sha256 "a3e16870986072fa85729870f2075cf8b66eed3663b840fc5ddd1a674a3b7e01"
     end
   end
 
@@ -25,10 +25,7 @@ class Happen < Formula
 
   def caveats
     <<~EOS
-      Prepare this Mac once, then start the server (it also starts at login):
-        happen setup
-        brew services start happen
-      Then connect a browser:
+      Set up this Mac, start the server (it also starts at login), and connect a browser:
         happen open
       Start a lead: tell Claude Code to run happen skill --channel <channel>
       and follow it, or type in the session:
