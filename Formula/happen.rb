@@ -11,11 +11,11 @@ class Happen < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tab0inc/happen-releases/releases/download/v0.6.0/happen_0.6.0_darwin_arm64.tar.gz"
-      sha256 "f175b58a33c2e6f4f62c200e83eb5ddd7e1035491597dc418aa565fb3bb3ecac"
+      url "https://github.com/tab0inc/happen-releases/releases/download/v0.7.0/happen_0.7.0_darwin_arm64.tar.gz"
+      sha256 "24cb5df8383a7b7676c13980ebffd90515a23f90abcc700af8c7349be9d0b417"
     else
-      url "https://github.com/tab0inc/happen-releases/releases/download/v0.6.0/happen_0.6.0_darwin_amd64.tar.gz"
-      sha256 "c5d7cd7e86b6a277067c39a3149bb50be9ee74d81af062ee54af3bd30372d6ea"
+      url "https://github.com/tab0inc/happen-releases/releases/download/v0.7.0/happen_0.7.0_darwin_amd64.tar.gz"
+      sha256 "7667b9318680d1233e14eb64d00b1bed1cf112e280e86fe420175e6cf15db842"
     end
   end
 
